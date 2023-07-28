@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Book Shop</title>
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+    <h1 id="hd1">ABC Book Shop </h1>
+        <br>
+
+    <form method="POST" action="index.php" id="fr1">
+
+        <h2 id="hd2">Books Database</h2>
+
+        <br> <br>
+
+        <table>
+
+
+
+            <tr>
+                <td><label>Book ID :</label></td>
+                <td><input type="number" id="bkid" name="bkid"></td>
+            </tr>
+
+
+            <tr>
+                <td><label>Book Title :</label></td>
+                <td><input type="text" id="bktitle" name="bktitle"></td>
+            </tr>
+
+
+            <tr>
+                <td><label>Author ID :</label></td>
+                <td><input type="number" id="aid" name="aid"></td>
+            </tr>
+
+
+            <tr>
+                <td><label>Genre ID :</label></td>
+                <td><input type="number" id="gid" name="gid"></td>
+            </tr>
+
+
+            <tr>
+                <td><label>Publication Date :</label></td>
+                <td><input type="date" id="pdate" name="pdate"></td>
+            </tr>
+
+
+            <tr>
+                <td><label>Book Price :</label></td>
+                <td><input type="number" step="00.01" id="bprice" name="bprice"></td>
+            </tr>
+
+
+        </table>
+
+
+
+        <br> <br>
+
+        <input type="submit" value="Insert" id="sub">
+    </form>
+
+    <br> <br> <br>
+
+
+     <!--Search books in database-->
+
+
+    <form method="GET" action="search.php" id="fr2">
+
+        <h2 id="hd2">Book Search</h2>
+
+        <br> <br>
+
+        <table>
+
+            <tr>
+                <td><label>Enter Book ID :</label></td>
+                <td><input type="number" id="bookid" name="bookid"></td>
+            </tr>
+        </table>
+
+        <br> <br>
+        <input type="submit" value="Search" id="sub">
+    </form>
+
+    <br> <br> <br>
+
+
+
+    <!--Add Books In Database-->
+
+    <form method="POST" action="add.php"  id="fr1">
+
+        <h2 id="hd2">Books Details Update</h2>
+
+        <table>
+
+            <tr>
+                <td><label>Book ID :</label></td>
+                <td><input type="number" id="bkid" name="bkid"></td>
+            </tr>
+
+
+            <tr>
+                <td><label>Book Title :</label></td>
+                <td><input type="text" id="bktitle" name="bktitle"></td>
+            </tr>
+
+
+            <tr>
+                <td><label>Author ID :</label></td>
+                <td><input type="number" id="aid" name="aid"></td>
+            </tr>
+
+
+            <tr>
+                <td><label>Genre ID :</label></td>
+                <td><input type="number" id="gid" name="gid"></td>
+            </tr>
+
+
+            <tr>
+                <td><label>Publication Date :</label></td>
+                <td><input type="date" id="pdate" name="pdate"></td>
+            </tr>
+
+
+            <tr>
+                <td><label>Book Price :</label></td>
+                <td><input type="number" step="00.01" id="bprice" name="bprice"></td>
+            </tr>
+
+
+        </table>
+
+        <br> <br>
+
+        <input type="submit" value="Insert" id="sub">
+    </form>
+
+
+</body>
+</html>
